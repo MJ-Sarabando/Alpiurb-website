@@ -21,8 +21,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8 mt-10 pt-6 border-t border-zinc-800 text-xs">
-        © {new Date().getFullYear()} Alpiurb. Todos os direitos reservados.
+      <div className="max-w-7xl mx-auto px-8 mt-10 pt-6 border-t border-zinc-800 text-xs flex justify-between items-center">
+        <span>© {new Date().getFullYear()} Alpiurb. Todos os direitos reservados.</span>
+        <span>Desenvolvido por MJ-SARABANDO</span>
       </div>
     </footer>
   )

@@ -9,13 +9,13 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-8 py-2 flex justify-between items-center">
+    <header className="fixed top-4 left-6 right-6 z-50">
+      <div className="w-full px-8 py-2 flex justify-between items-center bg-white shadow-lg rounded-sm">
         <a href="#">
           <img
-            src="/alpiurb_logo_square.png"
+            src="/ALPIURB_logo_long_yellow.png"
             alt="Alpiurb"
-            className="h-40 w-auto object-contain"
+            className="h-30 w-auto object-contain"
           />
         </a>
         <nav className="flex items-center gap-10">

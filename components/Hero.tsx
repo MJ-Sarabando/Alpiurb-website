@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-end">
+    <section className="relative h-screen flex items-end justify-start">
       <Image
         src="/Grande Escala_1.jpeg"
         alt="Técnico de acesso por cordas em trabalho"
@@ -11,12 +11,12 @@ export default function Hero() {
         priority
       />
       <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 max-w-7xl mx-auto px-8 pb-24 w-full">
+      <div className="relative z-10 px-20 pb-40">
         <p className="text-yellow-400 text-xs tracking-[4px] uppercase mb-4">
-          Manutenção de Edifícios por Cordas
+          Reabilitação de Edifícios por Acesso por Cordas
         </p>
-        <h1 className="text-white text-6xl font-bold uppercase leading-none max-w-3xl mb-6">
-          Trabalho em altura com segurança e precisão
+        <h1 className="text-white text-6xl font-bold uppercase leading-tight mb-6">
+          Trabalhos Urbanos<br />Soluções Verticais
         </h1>
         <a
           href="#servicos"
