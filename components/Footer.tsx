@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <p className="text-white font-bold tracking-widest uppercase mb-2">Alpiurb</p>
           <p className="text-sm">Manutenção de Edifícios por Cordas</p>
-          <p className="text-sm mt-1">Porto · Lisboa · Norte de Portugal</p>
+          <p className="text-sm mt-1">Porto · Norte de Portugal</p>
         </div>
         <div className="flex gap-12 text-sm">
           <div className="space-y-2">
