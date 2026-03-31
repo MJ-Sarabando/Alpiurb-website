@@ -1,37 +1,39 @@
-export default {
+import { defineField, defineType } from 'sanity'
+
+export default defineType({
   name: 'service',
-  title: 'Serviço',
+  title: 'Service',
   type: 'document',
   fields: [
-    {
-      name: 'nome',
-      title: 'Nome',
+    defineField({
+      name: 'name',
+      title: 'Name',
       type: 'string',
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: 'descricao',
-      title: 'Descrição',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
       type: 'text',
       rows: 3,
-    },
-    {
-      name: 'icone',
-      title: 'Ícone (nome do Lucide)',
+    }),
+    defineField({
+      name: 'icon',
+      title: 'Icon (Lucide name)',
       type: 'string',
-      description: 'Ex: wrench, shield, building',
-    },
-    {
-      name: 'ordem',
-      title: 'Ordem de apresentação',
+      description: 'e.g. wrench, shield, building',
+    }),
+    defineField({
+      name: 'order',
+      title: 'Display order',
       type: 'number',
-    },
+    }),
   ],
   orderings: [
     {
-      title: 'Ordem',
-      name: 'ordemAsc',
-      by: [{ field: 'ordem', direction: 'asc' }],
+      title: 'Display order',
+      name: 'orderAsc',
+      by: [{ field: 'order', direction: 'asc' }],
     },
   ],
-}
+})

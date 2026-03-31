@@ -1,30 +1,32 @@
-export default {
-  name: 'membro',
-  title: 'Membro da Equipa',
+import { defineField, defineType } from 'sanity'
+
+export default defineType({
+  name: 'member',
+  title: 'Team Member',
   type: 'document',
   fields: [
-    {
-      name: 'nome',
-      title: 'Nome',
+    defineField({
+      name: 'name',
+      title: 'Name',
       type: 'string',
-      validation: (Rule: any) => Rule.required(),
-    },
-    {
-      name: 'cargo',
-      title: 'Cargo',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'role',
+      title: 'Role',
       type: 'string',
-    },
-    {
-      name: 'foto',
-      title: 'Foto',
+    }),
+    defineField({
+      name: 'photo',
+      title: 'Photo',
       type: 'image',
       options: { hotspot: true },
-    },
-    {
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'text',
       rows: 3,
-    },
+    }),
   ],
-}
+})
