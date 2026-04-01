@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="space-y-2">
             <p className="text-white uppercase tracking-widest mb-3">Contacto</p>
             <p>geral@alpiurb.pt</p>
-            <p>+351 000 000 000</p>
+            <p>+351 938 587 661</p>
           </div>
         </div>
       </div>

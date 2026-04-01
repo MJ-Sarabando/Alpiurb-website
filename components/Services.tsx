@@ -5,7 +5,7 @@ import { useState } from 'react'
 const services = [
   { title: 'Inspeção e Diagnóstico de Fachadas', description: 'Levantamento detalhado do estado de revestimentos, fissuras e patologias estruturais em qualquer tipo de edifício.' },
   { title: 'Limpeza e Lavagem de Fachadas', description: 'Remoção de sujidade, fungos e depósitos em superfícies de grande dimensão sem recurso a andaimes.' },
-  { title: 'Reparação e Selagem', description: 'Tratamento de juntas, fissuras e impermeabilização de fachadas e coberturas em altura.' },
+  { title: 'Reparação e Selagem', description: 'Tratamento de juntas, fissuras e impermeabilização de fachadas e coberturas.' },
   { title: 'Pintura e Revestimento', description: 'Aplicação de tintas, impermeabilizantes e outros revestimentos por técnicos especializados em acesso por cordas.' },
   { title: 'Limpeza de Vidros', description: 'Limpeza de envidraçados em grandes alturas com equipamentos e técnicas adequadas a cada tipo de superfície.' },
 ]
