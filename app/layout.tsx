@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CookieBanner from '@/components/CookieBanner';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Alpiurb | Manutenção de Edifícios por Cordas',
-  description: 'Especialistas em manutenção e inspeção de fachadas por acesso por cordas. Serviços de limpeza, reparação e selagem em altura. Porto, Lisboa e Norte de Portugal.',
+  title: 'Alpiurb | Reabilitação de Edifícios por acesso por cordas',
+  description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas. Serviços de limpeza, reparação e selagem em altura. Porto, Lisboa e Norte de Portugal.',
   keywords: [
     'manutenção de edifícios',
     'acesso por cordas',
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     'limpeza de fachadas',
     'inspeção de fachadas',
     'reparação de fachadas',
+    'limpeza de vidros',
     'IRATA',
     'Porto',
     'Lisboa',
@@ -29,12 +31,13 @@ export const metadata: Metadata = {
     'Alpinistas',
     'Trabalhos por Cordas',
     'Reparar',
-    'Sem Andaimes'
+    'Sem Andaimes',
+    'Andaimes'
   ],
   authors: [{ name: 'Alpiurb' }],
   openGraph: {
     title: 'Alpiurb | Manutenção de Edifícios por Cordas',
-    description: 'Especialistas em manutenção e inspeção de fachadas por acesso por cordas em Portugal.',
+    description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas em Portugal.',
     url: 'https://www.alpiurb.pt',
     siteName: 'Alpiurb',
     locale: 'pt_PT',
@@ -55,7 +58,10 @@ export default function RootLayout({
       lang="pt"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col overflow-x-hidden">
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }

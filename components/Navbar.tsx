@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from 'react'
+
 const links = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Sobre Nós', href: '#sobre' },
@@ -8,9 +10,11 @@ const links = [
 ]
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className="fixed top-4 left-6 right-6 z-50">
-      <div className="w-full px-8 py-2 flex justify-between items-center bg-white shadow-lg rounded-sm">
+      <div className="w-full px-6 py-1 flex justify-between items-center bg-white/95 backdrop-blur-sm shadow-xl rounded-sm">
         <a href="#">
           <img
             src="/ALPIURB_logo_long_yellow.png"
@@ -18,7 +22,9 @@ export default function Navbar() {
             className="h-30 w-auto object-contain"
           />
         </a>
-        <nav className="flex items-center gap-10">
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <a
               key={link.href}
@@ -35,7 +41,41 @@ export default function Navbar() {
             Pedir Orçamento
           </a>
         </nav>
+
+        {/* Hamburger button */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex flex-col justify-center items-center gap-1.5 p-2"
+          aria-label="Menu"
+        >
+          <span className={`block w-6 h-0.5 bg-black transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-black transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-0.5 bg-black transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+        </button>
       </div>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="md:hidden mt-1 bg-white/95 backdrop-blur-sm shadow-xl rounded-sm px-6 py-4 flex flex-col gap-4">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="text-lg text-zinc-600 hover:text-black transition-colors py-1 border-b border-zinc-100"
+            >
+              {link.label}
+            </a>
+          ))}
+          <a
+            href="#contactos"
+            onClick={() => setMenuOpen(false)}
+            className="text-lg font-medium px-6 py-3 border border-black text-black hover:bg-black hover:text-white transition-colors text-center mt-2"
+          >
+            Pedir Orçamento
+          </a>
+        </div>
+      )}
     </header>
   )
 }

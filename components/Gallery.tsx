@@ -17,46 +17,53 @@ export default function Gallery() {
   const prev = () => setCurrent((i) => (i === 0 ? images.length - 1 : i - 1))
   const next = () => setCurrent((i) => (i === images.length - 1 ? 0 : i + 1))
 
-  const second = (current + 1) % images.length
+  const leftIdx = (current - 1 + images.length) % images.length
+  const rightIdx = (current + 1) % images.length
 
   return (
-    <section id="galeria" className="bg-zinc-100 py-8">
+    <section id="galeria" className="bg-white py-16 scroll-mt-28">
       <div className="max-w-7xl mx-auto px-8">
-        <h2 className="text-4xl font-bold text-zinc-700 mb-10">Galeria</h2>
-        <div className="relative">
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src={images[current].src}
-              alt={images[current].alt}
-              className="w-full h-[500px] object-contain bg-zinc-200"
-            />
-            <img
-              src={images[second].src}
-              alt={images[second].alt}
-              className="w-full h-[500px] object-contain bg-zinc-200"
-            />
-          </div>
+        <h2 className="text-5xl font-bold text-zinc-700 mb-10">Galeria</h2>
+      </div>
+
+      <div className="relative flex items-center justify-center gap-4 overflow-hidden">
+        {/* Left peek image + arrow */}
+        <div className="relative flex-shrink-0 w-[19vw]">
+          <img
+            src={images[leftIdx].src}
+            alt={images[leftIdx].alt}
+            className="w-full h-[26vw] object-cover"
+          />
           <button
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-black text-white text-2xl px-4 py-3 hover:bg-zinc-700 transition-colors"
+            className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white transition-colors w-12 h-12 flex items-center justify-center text-zinc-700 text-xl shadow"
           >
-            ‹
+            ←
           </button>
+        </div>
+
+        {/* Center main image */}
+        <div className="flex-shrink-0 w-[42vw]">
+          <img
+            src={images[current].src}
+            alt={images[current].alt}
+            className="w-full h-[34vw] object-cover"
+          />
+        </div>
+
+        {/* Right peek image + arrow */}
+        <div className="relative flex-shrink-0 w-[19vw]">
+          <img
+            src={images[rightIdx].src}
+            alt={images[rightIdx].alt}
+            className="w-full h-[26vw] object-cover"
+          />
           <button
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-black text-white text-2xl px-4 py-3 hover:bg-zinc-700 transition-colors"
+            className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white transition-colors w-12 h-12 flex items-center justify-center text-zinc-700 text-xl shadow"
           >
-            ›
+            →
           </button>
-          <div className="flex justify-center gap-2 mt-4">
-            {images.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrent(i)}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${i === current ? 'bg-yellow-400' : 'bg-zinc-400'}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>
