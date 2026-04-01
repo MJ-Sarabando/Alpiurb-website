@@ -12,7 +12,7 @@ export default function Footer() {
             height={48}
             className="mb-4 object-contain"
           />
-          <p>Reabilitação e Manutenção de Edifícios por Cordas</p>
+          <p>Reabilitação e Manutenção de Edifícios por Acesso por Cordas</p>
           <p className="mt-1">Gondomar · Porto · Norte de Portugal</p>
         </div>
         <div className="flex gap-12">
@@ -30,8 +30,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="w-full px-[10vw] mt-10 pt-6 border-t border-zinc-800 flex justify-between items-center">
-        <span>© {new Date().getFullYear()} Alpiurb. Todos os direitos reservados.</span>
-        <span>Desenvolvido por MJ-Sarabando</span>
+        <span>© {new Date().getFullYear()} Alpiurb.<br />Todos os direitos reservados.</span>
+        <span>Desenvolvido por<br />MJ-Sarabando</span>
       </div>
     </footer>
   )
