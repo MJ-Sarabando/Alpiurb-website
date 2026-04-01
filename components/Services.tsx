@@ -17,8 +17,8 @@ export default function Services() {
     <section id="servicos" className="bg-zinc-50 py-24 scroll-mt-28">
       <div className="w-full px-[10vw] grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         <div>
-          <h2 className="text-5xl font-bold mb-6 text-zinc-700">Os Nossos Serviços</h2>
-          <p className="text-zinc-700 leading-relaxed text-lg">
+          <h2 className="text-4xl font-bold mb-6 text-zinc-700">Os Nossos Serviços</h2>
+          <p className="text-zinc-700 leading-relaxed text-base">
             O acesso por cordas permite executar trabalhos em altura de forma segura e eficiente,
             sem custos de andaimes ou interrupções prolongadas no edifício.<br />Sejam intervenções de carácter urgente ou manutenções programadas, todas as nossas soluções são projetadas para as especificidade de cada projeto. 
           </p>
@@ -30,11 +30,11 @@ export default function Services() {
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex justify-between items-center py-5 text-left"
               >
-                <span className="font-medium text-zinc-700 text-lg">{s.title}</span>
-                <span className="text-2xl text-yellow-400 leading-none">{open === i ? '−' : '+'}</span>
+                <span className="font-medium text-zinc-700 text-sm">{s.title}</span>
+                <span className="text-xl text-yellow-400 leading-none">{open === i ? '−' : '+'}</span>
               </button>
               {open === i && (
-                <p className="text-zinc-700 text-base pb-5 leading-relaxed">{s.description}</p>
+                <p className="text-zinc-700 text-sm pb-5 leading-relaxed">{s.description}</p>
               )}
             </div>
           ))}

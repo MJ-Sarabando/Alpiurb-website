@@ -39,8 +39,8 @@ export default function Testimonies() {
     <section className="bg-zinc-50 py-24">
       <div className="w-full px-[10vw]">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-zinc-800 mb-4">Depoimentos</h2>
-          <p className="text-zinc-500 max-w-xl mx-auto text-lg leading-relaxed">
+          <h2 className="text-4xl font-bold text-zinc-800 mb-4">Depoimentos</h2>
+          <p className="text-zinc-500 max-w-xl mx-auto text-base leading-relaxed">
             O que dizem os nossos clientes. A confiança construída em cada projeto.
             Histórias reais de quem confia na Alpiurb.
           </p>
@@ -60,15 +60,15 @@ export default function Testimonies() {
               </div>
 
               <div>
-                <div className="text-5xl font-serif leading-none mb-6 text-yellow-400">
+                <div className="text-4xl font-serif leading-none mb-6 text-yellow-400">
                   &#8220;
                 </div>
-                <p className="font-semibold leading-relaxed text-lg">{t.quote}</p>
+                <p className="font-semibold leading-relaxed text-base">{t.quote}</p>
               </div>
 
               <div className="mt-8 pt-5 border-t border-zinc-400/20">
-                <p className="font-bold text-base">{t.author}</p>
-                <p className={`text-sm mt-0.5 ${subTextStyles[t.variant]}`}>{t.role}</p>
+                <p className="font-bold text-sm">{t.author}</p>
+                <p className={`text-xs mt-0.5 ${subTextStyles[t.variant]}`}>{t.role}</p>
               </div>
             </div>
           ))}

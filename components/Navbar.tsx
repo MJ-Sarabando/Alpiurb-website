@@ -14,29 +14,29 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-4 left-6 right-6 z-50">
-      <div className="w-full px-6 py-1 flex justify-between items-center bg-white/95 backdrop-blur-sm shadow-xl rounded-sm">
+      <div className="w-full px-6 py-0.5 flex justify-between items-center bg-white/95 backdrop-blur-sm shadow-xl rounded-sm">
         <a href="#">
           <img
             src="/ALPIURB_logo_long_yellow.png"
             alt="Alpiurb"
-            className="h-30 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-7">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-xl text-zinc-600 hover:text-black transition-colors"
+              className="text-sm text-zinc-600 hover:text-black transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contactos"
-            className="text-xl font-medium px-6 py-3 border border-black text-black hover:bg-black hover:text-white transition-colors"
+            className="text-sm font-medium px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors"
           >
             Pedir Orçamento
           </a>
@@ -62,7 +62,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-lg text-zinc-600 hover:text-black transition-colors py-1 border-b border-zinc-100"
+              className="text-sm text-zinc-600 hover:text-black transition-colors py-1 border-b border-zinc-100"
             >
               {link.label}
             </a>
@@ -70,7 +70,7 @@ export default function Navbar() {
           <a
             href="#contactos"
             onClick={() => setMenuOpen(false)}
-            className="text-lg font-medium px-6 py-3 border border-black text-black hover:bg-black hover:text-white transition-colors text-center mt-2"
+            className="text-sm font-medium px-4 py-2 border border-black text-black hover:bg-black hover:text-white transition-colors text-center mt-2"
           >
             Pedir Orçamento
           </a>

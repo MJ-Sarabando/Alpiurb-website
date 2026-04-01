@@ -19,8 +19,8 @@ export default function Features() {
       <div className="w-full px-[10vw] grid grid-cols-1 md:grid-cols-3 gap-12">
         {features.map((f) => (
           <div key={f.title} className="border-l-4 border-yellow-400 pl-6 py-4 bg-zinc-50 rounded-sm shadow-sm">
-            <h3 className="text-2xl font-semibold mb-4 text-zinc-800">{f.title}</h3>
-            <p className="text-zinc-600 leading-relaxed text-base">{f.text}</p>
+            <h3 className="text-xl font-semibold mb-4 text-zinc-800">{f.title}</h3>
+            <p className="text-zinc-600 leading-relaxed text-sm">{f.text}</p>
           </div>
         ))}
       </div>
