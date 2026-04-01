@@ -6,10 +6,10 @@ const images = [
   { src: '/coberturas_complexas_1.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer manutenção de cobertura no Center Parcs Les Trois Forêts , em Hattigny' },
   { src: '/coberturas_complexas_2.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer substituição da cobertura no Center Parcs Les Trois Forêts , em Hattigny' },
   { src: '/pintura.jpg', alt: 'Técnico IRATA da Alpiurb a fazer manutenção da caixa de elevador por acesso por cordas num hotel em Vila Nova de Gaia' },
-  { src: '/reparacao_fissura_1.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer reparação de fissura por acesso por cordas num prédio na Senhora da Hora' },
+  { src: '/Reparacao_fissura_1.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer reparação de fissura por acesso por cordas num prédio na Senhora da Hora' },
   { src: '/grande_escala_2.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer manutenção estrutura metálica de suporte em altura em Espinho por acesso por cordas' },
   { src: '/pintura_tubos_queda.jpeg', alt: 'Técnico IRATA da Alpiurb a fazer substituição de tubos de queda por acesso por cordas num prédio em Matosinhos' },
-  { src: '/Revestimento Fachada.jpeg', alt: 'Técnico IRATA da Alpiurb a substituir revestimento de fachada por acesso por cordas em Leça da Palmeira' },
+  { src: '/revestimento_fachada.jpeg', alt: 'Técnico IRATA da Alpiurb a substituir revestimento de fachada por acesso por cordas em Leça da Palmeira' },
   { src: '/reparacao_fisura_2.jpeg', alt: 'Equipa de alpinistas industriais da Alpiurb a reparar fachada por acesso por cordas em Matosinhos' },
 ]
 
