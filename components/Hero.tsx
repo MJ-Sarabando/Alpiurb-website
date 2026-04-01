@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-end justify-start">
       <Image
-        src="/Grande Escala_1.jpeg"
+        src="/grande_escala_1.jpeg"
         alt="Técnico de acesso por cordas em trabalho"
         fill
         className="object-cover"
