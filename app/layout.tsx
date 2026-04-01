@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.alpiurb.pt'),
   title: 'Alpiurb | Reabilitação de Edifícios por acesso por cordas',
   description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas. Serviços de limpeza, reparação e selagem em altura. Porto, Lisboa e Norte de Portugal.',
   keywords: [

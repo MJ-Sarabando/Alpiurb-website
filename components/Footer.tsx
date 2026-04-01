@@ -12,8 +12,8 @@ export default function Footer() {
             height={48}
             className="mb-4 object-contain"
           />
-          <p>Manutenção de Edifícios por Cordas</p>
-          <p className="mt-1">Porto · Norte de Portugal</p>
+          <p>Reabilitação e Manutenção de Edifícios por Cordas</p>
+          <p className="mt-1">Gondomar · Porto · Norte de Portugal</p>
         </div>
         <div className="flex gap-12">
           <div className="space-y-2">
