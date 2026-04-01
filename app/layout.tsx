@@ -19,12 +19,14 @@ export const metadata: Metadata = {
   description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas. Serviços de limpeza, reparação e selagem em altura. Porto, Lisboa e Norte de Portugal.',
   keywords: [
     'manutenção de edifícios',
+    'reabilitação de edifícios',
     'acesso por cordas',
     'trabalho em altura',
     'limpeza de fachadas',
     'inspeção de fachadas',
     'reparação de fachadas',
     'limpeza de vidros',
+    'Pintura por alpinistas',
     'IRATA',
     'Porto',
     'Lisboa',
@@ -33,6 +35,7 @@ export const metadata: Metadata = {
     'Trabalhos por Cordas',
     'Reparar',
     'Sem Andaimes',
+    "Alpinismo Industrial",
     'Andaimes'
   ],
   authors: [{ name: 'Alpiurb' }],

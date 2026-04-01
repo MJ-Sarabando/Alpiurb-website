@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-end justify-start">
       <Image
         src="/grande_escala_1.jpeg"
-        alt="Técnico de acesso por cordas em trabalho"
+        alt="Técnico IRATA da Alpiurb a fazer manutenção da ponte em Espinho por acesso por cordas"
         fill
         className="object-cover"
         priority
