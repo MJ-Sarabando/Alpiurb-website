@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.alpiurb.pt'),
+  metadataBase: new URL('https://alpiurb.pt'),
   title: 'Alpiurb | Reabilitação de Edifícios por acesso por cordas',
   description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas. Serviços de limpeza, reparação e selagem em altura. Porto, Lisboa e Norte de Portugal.',
   keywords: [
@@ -42,14 +42,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Alpiurb | Manutenção de Edifícios por Cordas',
     description: 'Especialistas em reabilitação, manutenção e inspeção de fachadas por acesso por cordas em Portugal.',
-    url: 'https://www.alpiurb.pt',
+    url: 'https://alpiurb.pt',
     siteName: 'Alpiurb',
     locale: 'pt_PT',
     type: 'website',
     images: [{ url: '/Grande_Escala_1.jpeg', width: 1200, height: 630, alt: 'Alpiurb - Trabalho em altura' }],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://www.alpiurb.pt' },
+  alternates: { canonical: 'https://alpiurb.pt' },
 };
 
 export default function RootLayout({
